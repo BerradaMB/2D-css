@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+    
+    
+}
+
+  .shape > div {
+    margin: 5%;
+    width: 90%;
+    height: 90%;
+    background-color: rgb(255 0 0 / 39%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    
+ 
+  }
+  .shape{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    height: 300px;
+    background-color: #eee;
+  }
+  .shape.x-axis::before{
+    content: "";
+    width: 100%;
+    height:2px;
+    background-color: black;
+    bottom: -20px;
+    position: absolute;
+  }
+  .shape .x-axis::after{
+    content: "X-Axis";
+    position: absolute;
+    bottom: -28px;
+    left:50%;
+    transform: translate(-50%);
+    background-color: #fff;
+    width: 60px;
+    text-align: center;
+  }
+  .shape .yaxis:before{
+    content: "";
+    width: 2px;
+    height: 100%;
+    background-color: black;
+    left:-20px;
+    position: absolute;
+  }
+  .shape .y-axis:after{
+    content:"y-Axis";
+    position: absolute;
+    left:-28px;
+    top:50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    height: 60px;
+    text-align: center;
+    font-weight: bold;
+    writing-mode:vertical-lr;
+  }
+.shape .origine {
+    position:absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+}
