@@ -1,0 +1,22 @@
+***************************************2D*************************************************************
+-transform:scalex(2) => it's better than width bcs this function cann modifie the left and right of our content
+-transform:scaley(3)=> this function can modifie the tom and the bottom off our content .
+-transform:scale(2,3)=> it's the shorthand of scalex,scaley  
+all scalle accepte the negative value so they can be a opposite result
+---------------------------------------rotate------------------------------------------------------------
+-transform:rotate(180 deg)=> for turning our content.
+PS:we can put rotate and scale in same ligne for exm:
+-transform:scale(1.2)rotate (10 deg).
+--------------------------------------translate----------------------------------------------------------
+-transform:translate(10px,0)=> we can give her px pourcent rem and they can take a negative value
+                             we can used for vertically and horizentally content .
+-------------------------------------skewx--------------------------------------------------------------
+-transform:skewx(10deg)=> pour les coins  for rotation 
+          skewy(10deg)
+          skew(100deg,100deg)=> short hand
+--------------------------------------matrix_--------------------------------------------------------------
+transform:matrix (sclaex(),skewY(),skewx(),scaleY(),translatex(),translateY()).
+=> we wirte alle our content in matrix with thhis order .
+-------------------------------------origine----------------------------------------------------------
+transform-origin:50% 50% .=> we give to our content a specific point that we all other transform option 
+                           
